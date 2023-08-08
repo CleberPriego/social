@@ -6,20 +6,43 @@
     <title>Redes Sociais</title>
     <style>
         @charset "UTF-8";
-        /* *{
+        *{
             margin: 0;
             padding: 0;
-        } */
-        body{
-
-            background-image: url('./imagens/fundo-madeira.jpg');
         }
-        nav{
-            position:absolute;
-            right: 10px;
+        html, body{
+            min-height: 100vh;
+        }
+        body{
+            background-image: url('./imagens/fundo-madeira.jpg');
         }
         ul{
             list-style: none;
+        }
+        nav{
+            position: absolute;
+            right: 2vh;
+
+        }
+        nav>ul>li>a>img{
+            width: 8vh;
+            border-radius: 1000px;
+            margin: 1.5vh;
+        }
+        section>img{ 
+            position: relative;
+            height: 96vh;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, 1%);   
+        }
+        iframe{
+            width: 40vh;
+            height: 71vh;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -51%);
         }
 
     </style>
@@ -43,7 +66,7 @@
 
     <section>
         <img src="./imagens/frame-iphone.png" alt="celular">
-        <iframe name="iframe" srcdoc='<img src="./imagens/tela-home.jpg">'  frameborder="1"></iframe>
+        <iframe name="iframe" srcdoc='<img src="./imagens/tela-home.jpg">' frameborder="1"></iframe>
     </section>
     
     
