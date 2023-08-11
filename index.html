@@ -40,16 +40,36 @@
             height: 472px;
             border-radius: 2px;
         }
-
+        #social{
+            text-align: right;
+        }
+        section#social > a > img{
+            width: 60px;
+            margin: 7px;
+            border-radius: 50%;
+            box-sizing: border-box; /* ao adicionar bordar no hover e ao passar o mouse em um dos icones o restante fica estático*/ 
+        }
+        #social img:hover{
+            border: 2px solid white;
+            transform: translate(-3px, -3px);
+            transition: transform .3s, border .2s;
+        }
     </style>
 </head>
 <body>
     <main>
         <section id="telefone">
-            <iframe src="./home.html" id="tela" name="tela" frameborder="0"></iframe>
+            <iframe src="./home.html" id="tela" name="tela" frameborder="0">
+                Se estiver lendo essa menssagem é porque seu navegador nao suporta esse tipo de conteudo.
+            </iframe>
         </section>
-        <section>
-            
+        <section id="social">
+            <a href="./index.html"><img src="./imagens/logo-home.jpg"></a><br>
+            <a href="./imagens/tela-youtube.png" target="tela"><img src="./imagens/logo-youtube.jpg"></a><br>
+            <a href="#"><img src="./imagens/logo-github.jpg"></a><br>
+            <a href="#"><img src="./imagens/logo-instagram.jpg"></a><br>
+            <a href="#"><img src="./imagens/logo-twitter.jpg"></a><br>
+            <a href="#"><img src="./imagens/logo-facebook.jpg"></a>
         </section>
     </main>
     
